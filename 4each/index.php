@@ -6,19 +6,6 @@
 	<link rel="stylesheet"type="text/css"href="style.css">
 </head>
 	<body>
-		
-		<?php
-			mb_internal_encoding("utf8");
-			$pdo=new PDO("mysql:dbname=contactform;host=localhost;","root","mysql");
-			$stmt=$pdo->query("select *from 4each");
-			while($row=$stmt->fetch()){
-				echo $row['handlename'];
-				echo $row['title'];
-				echo $row['comments'];
-			}
-		?>
-		
-			
 		<header>
 			<img src="4eachblog_logo.jpg">
 		</header>
@@ -34,6 +21,9 @@
 		<div class="left">
 			<form method="post" action="insert.php" class="form">
 			<section>
+				<h2>プログラミングに役立つ掲示板</h2>
+			</section>
+			<section>
 				<h3>ハンドルネーム</h3>
 				<input type="text" class="text" name="handlename" size="50">
 			</section>
@@ -48,7 +38,7 @@
 			<section>
 				<input type="submit" class="submit" value="投稿する">
 			</section>
-			</form>
+			</form>	
 		</div>
 		<div class="right">
 			<section>
@@ -56,13 +46,13 @@
 			</section>
 			<section>
 				<br>
-				<p>PHPオススメ本</p>
+				<p class="element1">PHPオススメ本</p>
 				<br>
-				<p>PHP　Myadminの使い方</p>
+				<p class="element2">PHP　Myadminの使い方</p>
 				<br>
-				<p>今人気のエディタTop5</p>
+				<p class="element3">今人気のエディタTop5</p>
 				<br>
-				<p>HTMLの基礎</p>
+				<p class="element4">HTMLの基礎</p>
 				<br>
 			</section>	
 			<section>
@@ -70,13 +60,13 @@
 			</section>
 			<section>
 				<br>
-				<p>インターノウス株式会社</p>
+				<p class="element1">インターノウス株式会社</p>
 				<br>
-				<p>XAMPPのダウンロード</p>
+				<p class="element2">XAMPPのダウンロード</p>
 				<br>
-				<p>Eclipseのダウンロード</p>
+				<p class="element3">Eclipseのダウンロード</p>
 				<br>
-				<p>Braketsのダウンロード</p>
+				<p class="element4">Braketsのダウンロード</p>
 				<br>
 			</section>
 			<section>
@@ -84,16 +74,32 @@
 			</section>
 			<section>
 				<br>
-				<p>HTML</p>
+				<p class="element1">HTML</p>
 				<br>
-				<p>PHP</p>
+				<p class="element2">PHP</p>
 				<br>
-				<p>MySQL</p>
+				<p class="element3">MySQL</p>
 				<br>
-				<p>JavaScript</p>
+				<p class="element4">JavaScript</p>
 				<br>
 			</section>	
-		</div>		
+		</div>
+			
+			<?php
+			mb_internal_encoding("utf8");
+			$pdo=new PDO("mysql:dbname=contactform;host=localhost;","root","mysql");
+			$stmt=$pdo->query("select *from 4each");
+			while($row=$stmt->fetch()){
+				echo"<div class='kiji'>";
+				echo"<h3>".$row['title']."</h3>";
+				echo"<div class='contents'>";
+				echo $row['comments'];
+				echo"<div class='handlename'>posted by ".$row['handlename']."</div>";
+				"</div>";
+				"</div>";
+			}
+		?>
+			
 		</main>
 		<fooder>
 			<p>copyright internous|4each blog is the one which provides a to z about programming.</p>

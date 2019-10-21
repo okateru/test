@@ -24,28 +24,64 @@ li{
 .left{
 	clear: both;
 	float:left;
-	background-color: gray;
-	width 70%;
+	background-color: #e6e6fa;
+	border: solid 2px #696969;
+	width 75%;
+	padding-top: 50px;
+	padding-right: 560px;
+	padding-left: 40px;
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+h2{
+	border-left:solid 10px red; 
+}
+
+
+.kiji{
+	clear: both;
+	float:left;
+	background-color: #e6e6fa;
+	border: solid 2px #696969;
+	width: 74%;
 }
 	
 .right{
-/*	float:right;*/
-	float:left;
-	width: 30%;
+	float:right;
+	width: 25%;
 	height: auto;
 }
 
 .right p{
-	
+		float:left;	
 }
 
 .right .title{
-	border-bottom: dotted;
-	width: 30%;
+	clear: both;
+	border-bottom: dotted #696969;
+	width: 80%;
 	height: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+.right .element1{
+	clear: both;
+}
+
+.right .element2{
+	clear: both;
+}
+
+.right .element3{
+	clear: both;
+}
+
+.right .element4{
+	clear: both;
+}
+
 
 fooder p{
 	clear: both;
