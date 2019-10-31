@@ -1,3 +1,6 @@
+//SQL文を書く唯一のクラス
+//DAOクラス　data access object DBと会話するクラス
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+C:\Users\internousdev\Desktop\workspace\workspace-okazaki\test\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+956089236.index
+3390329726.index
+3625254494.index
+131213354.index
+3628567827.index
+1056572365.index
+671033502.index
